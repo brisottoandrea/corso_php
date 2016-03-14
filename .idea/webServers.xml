@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3f992e65-6fc9-483c-a0fc-f95a3d3d18cd" name="php_test" url="http://briso.navhost.com/">
+        <fileTransfer host="server02.nav.host" port="21" password="dfcbdfc8dfc9df9bdf98df99" username="briso">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

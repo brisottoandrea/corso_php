@@ -1,0 +1,34 @@
+/*noinspection CssUnknownTarget*/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,300);
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #eeeeee;
+    width: 70%;
+    margin: 15px auto 0;
+}
+
+/*.div-material
+{
+    transition: transform 2s;
+}
+
+.div-material:hover
+{
+    box-shadow: 4px 4px 10px 0 rgba(0,0,0, 0.65);
+    transform: rotate(30deg);
+}
+*/
+
+.div-material {
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px 0 rgba(0,0,0, 0.65);
+}
+
+.btn {
+    width: 100%;
+    background-color: #ff4436;
+    color: #ffffff;
+}
