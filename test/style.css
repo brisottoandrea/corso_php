@@ -24,11 +24,29 @@ body{
     margin: 0 auto;
     padding: 5px;
     background-color: #ffffff;
-    box-shadow: 4px 4px 10px 0 rgba(0,0,0, 0.65);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.36);
+    -moz-box-shadow:    0 3px 6px rgba(0,0,0,0.36);
+    box-shadow:         0 3px 6px rgba(0,0,0,0.36);
+}
+
+input
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
 }
 
 .btn {
-    width: 100%;
     background-color: #ff4436;
     color: #ffffff;
+    border: 0;
+    padding: 5px 10px;
+    transition: box-shadow 3s;
+    transition: -moz-box-shadow 3s;
+    transition: -webkit-box-shadow 3s;
+}
+
+.btn:hover{
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.36);
+    -moz-box-shadow:    0 3px 6px rgba(0,0,0,0.36);
+    box-shadow:         0 3px 6px rgba(0,0,0,0.36);
 }
