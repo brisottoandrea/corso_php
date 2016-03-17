@@ -24,6 +24,10 @@ class Carrello
             $this->id = $carrelloData['id'];
         }
 
+        if(isset($carrelloData['ora'])) {
+            $this->ora = $carrelloData['ora'];
+        }
+
         if(isset($carrelloData['numeroCarrello'])) {
             $this->numeroCarrello = $carrelloData['numeroCarrello'];
         }

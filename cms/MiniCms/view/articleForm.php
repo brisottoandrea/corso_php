@@ -1,5 +1,6 @@
 <?php include_once __DIR__ . "/header.php"; ?>
-    <h2>Lista Articoli</h2>
+<div class="container-fluid">
+    <h2>Form Articoli</h2>
     <form action="admin.php?act=save" method="post">
         <div class="form-group">
             <label for="title">Titolo</label>
@@ -12,6 +13,7 @@
 
         <input type="hidden" name="id" value="<?=isset($article)?$article->getId():''?>"/>
         <button type="submit" class="btn btn-primary">Invia</button>
-        <a href="admin.php" class="btn btn-default">Annulla</a>
+        <a href="admin.php" class="btn btn-danger">Annulla</a>
     </form>
+</div>
 <?php include_once __DIR__ ."/footer.php";

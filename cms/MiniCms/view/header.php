@@ -21,10 +21,6 @@
 </head>
 <body>
 
-<a class="button-fab" id="divPrenotazione">
-    <img src="view/images/prenotazione_icon.svg" width="70%" title="Prenota Carrello">
-</a>
-
 <nav class="navbar navbar-default navbar-fixed-top" id="menu-top">
     <div class="container-fluid">
         <div class="navbar-header">

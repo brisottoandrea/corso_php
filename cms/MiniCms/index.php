@@ -5,8 +5,32 @@ include_once(__DIR__."/DB/DatabaseConnector.php");
 $db = new \MiniCms\DB\DatabaseConnector();
 
 include_once "view/header.php";
+
+
+var_dump($_GET);
+var_dump($_POST);
 ?>
+
+    <a class="button-fab" id="divPrenotazione">
+        <img src="view/images/prenotazione_icon.svg" width="70%" title="Prenota Carrello">
+    </a>
+
     <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form action="index.php" method="post">
+                            <input type="text" name="login" class="form-control" /><br>
+                            <button type="submit" class="btn btn-primary">Invia</button><br><br>
+                            <p class="no-margin">Il valore inviato è <strong><?= $_POST['login'];?></strong></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
         <!-- Carrello 1 -->
         <div class="col-sm-6">
@@ -177,6 +201,19 @@ include_once "view/header.php";
                 </table>
             </div>
         </div>
+        </div>
+
+        <div class="col-sm-12" id="overlay">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="panel-prenotazione" id="panelPrenotazione">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h1>Test Pannello</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

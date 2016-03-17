@@ -19,7 +19,7 @@ class DatabaseConnector {
     public function getArticles($orderBy="created",$order="DESC") {
         $orderBy = ($orderBy != "title" || $orderBy != "created") ? $orderBy : "created";
         $order = $order == "ASC" ? "ASC" : "DESC";
-        $qry = $this->connector->query("SELECT * FROM carrello ORDER BY {$orderBy} {$order}");
+        $qry = $this->connector->query("SELECT * FROM articles ORDER BY {$orderBy} {$order}");
         $articles = [];
         while ($articleData = $qry->fetch_assoc()) {
             if(!isset($articleData['id']))
