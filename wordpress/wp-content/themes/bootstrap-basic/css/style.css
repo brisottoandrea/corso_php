@@ -1,0 +1,33 @@
+/* mio css */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f3f3f3;
+}
+
+.container, .page-container {
+    flex: 1 0 auto;
+}
+
+.no-margin
+{
+    margin: 0;
+}
+.no-margin-top
+{
+    margin-top: 0;
+}
+.no-margin-bottom
+{
+    margin-bottom: 0;
+}
+.text-justify
+{
+    text-align: justify;
+}
+.no-line-height
+{
+    line-height: normal;
+}
+/* end mio css */

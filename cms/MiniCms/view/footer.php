@@ -9,6 +9,14 @@
             $("#panelPrenotazione").toggleClass("show");
             $("#overlay").toggleClass("show");
         });
+        $("#divPrenotazioneTop").click(function () {
+            $("#panelPrenotazione").addClass("show");
+            $("#overlay").addClass("show");
+        });
+        $("#closeDivPrenotazione").click(function() {
+            $("#panelPrenotazione").removeClass("show");
+            $("#overlay").removeClass("show");
+        })
     });
 </script>
 </body>

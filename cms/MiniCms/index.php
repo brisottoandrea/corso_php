@@ -6,9 +6,6 @@ $db = new \MiniCms\DB\DatabaseConnector();
 
 include_once "view/header.php";
 
-
-var_dump($_GET);
-var_dump($_POST);
 ?>
 
     <a class="button-fab" id="divPrenotazione">
@@ -56,14 +53,14 @@ var_dump($_POST);
                     <?php foreach ($db->getCarrelli("data", "DESC", 1) as $carrello): ?>
                         <tr>
                             <td></td>
-                            <td><?= $carrello->getAula(); ?> <?= $carrello->getProfessore(); ?></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><?php if ($carrello->getOra() == 1){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 2){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 3){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 4){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 5){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 6){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 7){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 8){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
                         </tr>
                     <?php endforeach; ?>
 
@@ -150,14 +147,14 @@ var_dump($_POST);
                     <?php foreach ($db->getCarrelli("data", "DESC", 3) as $carrello): ?>
                         <tr>
                             <td></td>
-                            <td><?= $carrello->getAula(); ?> <?= $carrello->getProfessore(); ?></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><?php if ($carrello->getOra() == 1){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 2){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 3){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 4){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 5){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 6){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 7){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 8){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>
@@ -188,14 +185,14 @@ var_dump($_POST);
                     <?php foreach ($db->getCarrelli("data", "DESC", 4) as $carrello): ?>
                         <tr>
                             <td></td>
-                            <td><?= $carrello->getAula(); ?> <?= $carrello->getProfessore(); ?></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><?php if ($carrello->getOra() == 1){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 2){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 3){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 4){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 5){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 6){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 7){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
+                            <td><?php if ($carrello->getOra() == 8){ echo $carrello->getAula() . " " . $carrello->getProfessore();}?></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>
@@ -209,6 +206,7 @@ var_dump($_POST);
                 <div class="panel-prenotazione" id="panelPrenotazione">
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            <a class="close" aria-label="Close" id="closeDivPrenotazione"><span aria-hidden="true">&times;</span></a>
                             <h1>Test Pannello</h1>
                         </div>
                     </div>
